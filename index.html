@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Code Editor</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="x-icon" href="./Related-Media/Logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>   
+</head>
+<body>
+    <section class="Main-Section">
+        <div class="Top-Section">
+            <div onkeyup="Render()" class="HTML-Section Coding-Section">
+                <div class="Logo">
+                    <p>HTML</p>
+                </div>
+                <textarea wrap="off"  spellcheck="false" style="color: #3374c9;" id="HTML" contenteditable="true"> </textarea>
+            </div>
+            <div onkeyup="Render()" class="CSS-Section Coding-Section">
+                <div class="Logo">
+                    <p>CSS</p>
+                </div>
+                <textarea wrap="off"  spellcheck="false" style="color: #d86464;" id="CSS" contenteditable="true"> </textarea>
+            </div>
+            <div onkeyup="Render()" class="JavaScript-Section Coding-Section">
+                <div class="Logo">
+                    <p>JavaScript</p>
+                </div>
+                <textarea wrap="off" spellcheck="false" style="color:#bac933" id="JavaScript" contenteditable="true"></textarea>
+            </div>
+        </div><div class="Logo">
+            <p>OutPut</p>
+        </div>
+        <iframe  class="Rendered-Section" srcdoc="" id="render" src="" frameborder="0">
+    
+        </iframe>
+    </section>
+    <script src="./index.js">
+    </script>
+</body>
+</html>
